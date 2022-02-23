@@ -1,0 +1,36 @@
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  min-height: 65px;
+  margin: 0 auto;
+  padding: 40px 70px;
+
+  &__phone {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .social-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        margin-right: 29px;
+        position: relative;
+        width: 20px;
+        height: 18px;
+    }
+    .social-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+  }
+}

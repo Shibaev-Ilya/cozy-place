@@ -1,0 +1,104 @@
+.cards-section {
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 24px;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .pagination {
+        border-top: 1px solid #E6E6E6;
+
+        &__wrap {
+            border-top: 1px solid #E6E6E6;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__pages {
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__page {
+            width: 55px;
+            height: 55px;
+            background: #83B3D3;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            margin-left: 8px;
+            cursor: pointer;
+
+            &-active {
+                background: #F2F2F2;
+                color: #000000;
+            }
+        }
+
+        &__total {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &__pages-select {
+            margin-left: 50px;
+            width: 160px;
+            height: 48px;
+            border: 2px solid #E6E6E6;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    }
+
+    .button-showmore {
+        display: block;
+        margin: 30px auto;
+        padding: 17px;
+        width: 60%;
+    }
+
+}
+
+.layout-btn {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    &__icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    &-active {
+        border-color: #000000;
+    }
+}

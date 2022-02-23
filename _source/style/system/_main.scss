@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "PT Sans";
+
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+.body-grid {
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #fff;
+  color: #333333;
+  display: grid;
+  grid-template-rows: min-content 1fr minmax(120px, min-content);
+}
+
+.button {
+  background-color: #756257;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  &-blue {
+    background-color: #83B3D3;
+  }
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.container {
+    width: 1055px;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+
+// универсальный паттерн для скрытия текста
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

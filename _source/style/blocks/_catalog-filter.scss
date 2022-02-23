@@ -1,0 +1,112 @@
+.filter {
+  background-image: url('../img/banner/catalog-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 35px 0 80px;
+
+  &__submit {
+    border-radius: 4px;
+    width: 160px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__reset {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    margin: 0;
+  }
+
+  &__breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+  }
+
+  &__form {
+      display: flex;
+      margin-top: 45px;
+      align-items: center;
+    legend {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 30px;
+      }
+
+      label {
+        font-size: 18px;
+        line-height: 23px;
+        display: flex;
+      }
+
+      fieldset {
+          border: none;
+          padding: 0;
+      }
+  }
+
+  &__checkbox {
+      display: flex;
+      flex-direction: column;
+      input {
+          margin-right: 19px;
+          width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+      }
+  }
+
+  &__radio {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-right: 19px;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+  }
+
+  &__range {
+    margin-left: auto;
+    &__wrap {
+        display: flex;
+        margin-bottom: 20px;
+        .range {
+            width: 140px;
+            height: 18px;
+            border: 2px solid #FFFFFF;
+            background-color: transparent;
+            color: #ffffff;
+            margin-right: -1px;
+            border-radius: 0 4px 4px 0;
+            padding: 15px;
+            &-first {
+                border-radius: 4px 0 0 4px;
+            }
+        }
+    }
+  }
+
+  &__buttons-wrap {
+      display: flex;
+      flex-direction: column;
+      margin-left: 80px;
+  }
+
+}

@@ -1,0 +1,62 @@
+.subscribe-form {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url('../img/banner/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    text-align: center;
+    padding: 94px 0;
+    line-height: 36px;
+    color: #fff;
+
+    .title {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 29px;
+    }
+
+    .text {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 46px;
+    }
+
+    &__form {
+        width: 80%;
+        height: 60px;
+        margin: 46px auto 15px;
+        display: flex;
+        justify-content: center;
+        input {
+            height: 100%;
+        }
+
+        .form__btn {
+            width: 200px;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        .form__phone {
+            width: 600px;
+            border: none;
+            padding: 0 22px;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    &-catalog {
+        background-image: none;
+        background-color: #fff;
+        color: #333333;
+        padding-bottom: 140px;
+        .title {
+            color: #000000;
+        }
+        .text {
+            margin: 46px 0;
+        }
+        .form__phone {
+            background: #F2F2F2;
+        }
+    }
+}
