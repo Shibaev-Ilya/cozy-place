@@ -30,15 +30,36 @@
   }
 
   &__breadcrumbs {
+    display: flex;
+    padding-left: 0;
     font-size: 16px;
     line-height: 21px;
     margin: 0;
+
+    .breadcrumb {
+        position: relative;
+        padding: 8px;
+        &:not(:first-child) {
+            margin-left: 12px;
+            &::before {
+                position: absolute;
+                width: 5px;
+                height: 8px;
+                background-image: url('../img/style/beadcrumb.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                top: 39%;
+                left: -8px;
+                content: '';
+            }
+        }
+    }
+
   }
 
   &__form {
       display: flex;
       margin-top: 45px;
-      align-items: center;
     legend {
         font-weight: bold;
         font-size: 20px;
@@ -58,48 +79,117 @@
       }
   }
 
+  .control {
+      cursor: pointer;
+
+      &-mark {
+          width: 20px;
+          height: 20px;
+          background-color: #ffffff;
+          border-radius: 4px;
+          position: relative;
+      }
+      &-label {
+          margin-left: 19px;
+      }
+  }
+
+  .control:not(:last-child) {
+      margin-bottom: 16px;
+  }
+
+  .control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+
+  }
+  .control-input[type="radio"]:checked + .control-mark {
+    background-color: #3F5E72;
+    border: 5px solid #ffffff;
+    width: 10px;
+    height: 10px;
+  }
+
+    .control-input[type="checkbox"]:checked + .control-mark {
+        background-image: url('../img/style/checkbox.svg');
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+
+    .control-input[type="checkbox"]:focus + .control-mark,
+    .control-input[type="radio"]:focus + .control-mark {
+        outline: 3px solid #83B3D3;
+    }
+
   &__checkbox {
       display: flex;
       flex-direction: column;
-      input {
-          margin-right: 19px;
-          width: 20px;
-        height: 20px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-      }
+      margin-right: 65px;
   }
 
   &__radio {
       display: flex;
       flex-direction: column;
-      input {
-        margin-right: 19px;
-        width: 20px;
-        height: 20px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-    }
   }
 
   &__range {
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     &__wrap {
         display: flex;
         margin-bottom: 20px;
         .range {
-            width: 140px;
+            width: 108px;
             height: 18px;
             border: 2px solid #FFFFFF;
+            border-right-width: 2px;
+            border-left-width: 1px;
             background-color: transparent;
             color: #ffffff;
-            margin-right: -1px;
             border-radius: 0 4px 4px 0;
             padding: 15px;
+            appearance: textfield;
             &-first {
                 border-radius: 4px 0 0 4px;
+                border-right-width: 1px;
+                border-left-width: 2px;
             }
         }
+    }
+    .range::-webkit-outer-spin-button,
+    .range::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+    }
+    .range-scale {
+        box-sizing: border-box;
+        width: 100%;
+        height: 4px;
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        position: relative;
+    }
+
+    .range-bar {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #FFFFFF;
+    }
+    .range-toggle {
+        position: absolute;
+        top: -8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+    .toggle-min {
+        left: 0;
+    }
+    .toggle-max {
+        right: 0;
     }
   }
 
@@ -107,6 +197,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 80px;
+      align-self: flex-end;
   }
 
 }

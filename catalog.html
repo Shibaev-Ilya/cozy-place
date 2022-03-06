@@ -43,19 +43,52 @@
         <section class="filter">
             <div class="container">
                 <h1 class="filter__title">Гостиницы Седоны</h1>
-                <p class="filter__breadcrumbs">Гостиницы</p>
+                <ul class="filter__breadcrumbs">
+                    <li class="breadcrumb"><a href="/">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0.300003L0 5.8V12H12V5.8L6 0.300003ZM11 11H1V6.2L6 1.7L11 6.2V11Z" fill="white"/>
+                            <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
+                            </svg>
+                        <span class="visually-hidden">Home</span></a></li>
+                    <li class="breadcrumb">Гостиницы</li>
+                </ul>
                 <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset class="filter__checkbox">
                         <legend>Инфраструктура:</legend>
-                        <label><input type="checkbox" name="pool">Бассейн</label>
-                        <label><input type="checkbox" name="parking">Парковка</label>
-                        <label><input type="checkbox" name="wifi">Wi-Fi</label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Бассейн</span>
+                        </label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="parking">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Парковка</span>
+                        </label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Wi-Fi</span>
+                        </label>
                     </fieldset>
+
                     <fieldset class="filter__radio">
                         <legend>Тип жилья:</legend>
-                        <label><input type="radio" name="type" value="hotel">Гостиница</label>
-                        <label><input type="radio" name="type" value="motel">Мотель</label>
-                        <label><input type="radio" name="type" value="appartment">Апартаменты</label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="type" value="hotel" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Гостиница</span>
+                        </label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="type" value="motel">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Мотель</span>
+                        </label>
+                        <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="type" value="appartment">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Апартаменты</span>
+                        </label>
                     </fieldset>
 
 
@@ -66,23 +99,17 @@
                             <label><input class="range" type="number" name="" id="" value="9000"></label>
                         </div>
 
-                        <label>
-                            <output name="result">50</output>
-                            <input type="range" name="price" id="range" min="0" max="100" multiple
-                                list="tickmarks"></label>
-                        <datalist id="tickmarks">
-                            <option value="0">
-                            <option value="10">
-                            <option value="20">
-                            <option value="30">
-                            <option value="40">
-                            <option value="50" label="50%">
-                            <option value="60">
-                            <option value="70">
-                            <option value="80">
-                            <option value="90">
-                            <option value="100">
-                        </datalist>
+                        <div class="range-scale">
+                            <div class="range-bar" style="left: 42px; width: 136px">
+                              <button class="range-toggle toggle-min">
+                                <span class="visually-hidden">Изменить минимальную цену.</span>
+                              </button>
+                              <button class="range-toggle toggle-max">
+                                <span class="visually-hidden">Изменить максимальную цену.</span>
+                              </button>
+                            </div>
+                        </div>
+
                     </fieldset>
                     <div class="filter__buttons-wrap">
                         <input class="filter__submit button button-blue" type="submit" value="Применить">

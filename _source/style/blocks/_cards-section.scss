@@ -21,6 +21,27 @@
         justify-items: center;
     }
 
+    &__filter {
+        position: relative;
+        border: 2px solid #E6E6E6;
+        border-radius: 4px;
+        width: 287px;
+        height: 48px;
+        padding: 12px 50px 12px 19px;
+        appearance: none;
+        background-image: url('../img/style/select-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 7px;
+
+        }
+    }
+
     .pagination {
         border-top: 1px solid #E6E6E6;
 
@@ -72,6 +93,11 @@
             border: 2px solid #E6E6E6;
             box-sizing: border-box;
             border-radius: 4px;
+            padding: 13px 50px 13px 17px;
+            appearance: none;
+            background-image: url('../img/style/select-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
         }
     }
 
