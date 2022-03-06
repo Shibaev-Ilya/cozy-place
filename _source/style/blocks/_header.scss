@@ -23,8 +23,10 @@
       border-bottom: 2px solid transparent;
       cursor: pointer;
       &:hover {
-          color: #756257;
         border-bottom: 2px solid #756257;
+      }
+      &:hover .menu__link {
+        color: #756257;
       }
     }
   }
@@ -51,6 +53,9 @@
       width: 20px;
       height: 20px;
       padding: 12px;
+      &:hover .nav-icon {
+        fill: #756257;
+      }
 
   }
 
@@ -59,6 +64,9 @@
       width: 20px;
       height: 20px;
       padding: 12px;
+      &:hover .nav-icon {
+        fill: #756257;
+      }
   }
 
   .nav-icon {
@@ -69,10 +77,6 @@
       right: 0;
       margin: auto;
       fill: rgb(0, 0, 0);
-
-      &:hover {
-        fill: #756257;
-      }
   }
 
 }

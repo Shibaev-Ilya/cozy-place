@@ -27,6 +27,18 @@
 
     &__img {
         align-self: center;
+        &:hover {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+        &:focus {
+            outline: 3px solid #68A2CA;
+        }
+        img {
+            display: block;
+        }
     }
 
     &__title {

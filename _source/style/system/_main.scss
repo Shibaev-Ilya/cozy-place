@@ -38,8 +38,25 @@ html {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+    &:hover {
+        background-color: #615048;
+    }
+
+    &:focus {
+        outline: 3px solid #68A2CA;
+    }
+    &:active {
+        color: rgba(#FFFFFF, 0.3);
+    }
+
   &-blue {
     background-color: #83B3D3;
+    &:hover {
+        background-color: #68A2CA;
+    }
+    &:focus {
+        outline: 3px solid #615048;
+    }
   }
 }
 

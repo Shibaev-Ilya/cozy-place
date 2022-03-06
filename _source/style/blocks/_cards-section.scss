@@ -127,4 +127,8 @@
     &-active {
         border-color: #000000;
     }
+
+    &:focus, &:hover {
+        border-color: #68A2CA;
+    }
 }
