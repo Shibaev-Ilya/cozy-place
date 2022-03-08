@@ -56,6 +56,24 @@
       &:hover .nav-icon {
         fill: #756257;
       }
+      &:active .header__favorites__icon {
+        color: rgba($color: #ffffff, $alpha: 0.3)
+      }
+      &__icon {
+          position: absolute;
+          background-color: #7DB54F;
+          color: #ffffff;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          font-size: 10px;
+          line-height: 13px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 0;
+          right: 0;
+      }
 
   }
 

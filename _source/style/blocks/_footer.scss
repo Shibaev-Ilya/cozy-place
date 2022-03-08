@@ -11,6 +11,19 @@
   &__phone {
     font-size: 40px;
     line-height: 40px;
+    padding: 8px;
+    &:focus-visible {
+        outline: 3px solid #68A2CA;
+        border-radius: 5px;
+    }
+  }
+
+  &__link {
+    padding: 8px;
+    &:focus-visible {
+        outline: 3px solid #68A2CA;
+        border-radius: 5px;
+    }
   }
 
   .social-links {
@@ -19,10 +32,15 @@
     padding: 0;
 
     &__item {
-        margin-right: 29px;
+        margin-right: 13px;
         position: relative;
         width: 20px;
         height: 18px;
+        padding: 8px;
+        &:focus-visible {
+            outline: 3px solid #68A2CA;
+            border-radius: 5px;
+        }
     }
     .social-icon {
         position: absolute;
