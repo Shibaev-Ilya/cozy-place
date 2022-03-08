@@ -21,17 +21,17 @@ var path = {
     font: './_source/fonts/**/*\.*',
   },
   build: {
-    js: './_assets/js/',
-    style: './_assets/css/',
-    css: './_assets/css/',
-    img: './_assets/img/',
-    font: './_assets/fonts/',
+    js: './assets/js/',
+    style: './assets/css/',
+    css: './assets/css/',
+    img: './assets/img/',
+    font: './assets/fonts/',
   }
 };
 
 // Clean assets
 function clean() {
-  return del(["_assets"]);
+  return del(["assets"]);
 }
 
 function jsBuild() {
