@@ -36,8 +36,6 @@ function clean() {
 
 function jsBuild() {
   return gulp.src(path.src.js)
-    .pipe(uglify())
-    .pipe(concat('bundle.min.js'))
     .pipe(gulp.dest(path.build.js));
 };
 

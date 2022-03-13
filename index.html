@@ -36,7 +36,7 @@
                         </svg>
                         <span class="header__favorites__icon">12</span>
                     </a>
-                    <button class="button button__header">I want here !</button>
+                    <button class="button button__header" data-modal="modal">I want here !</button>
             </div>
         </div>
     </header>
@@ -129,7 +129,7 @@
             <h2 class="title">Interested?</h2>
             <p class="text">Please indicate your expected travel dates<br>
                 and we will show you the best hotel deals in Sedona</p>
-            <a class="button" href="">Search Sedona hotel</a>
+            <button class="button" data-modal="modal">Search Sedona hotel</button>
         </section>
         <section class="subscribe-form">
             <p class="title">Subscribe to newsletter</p>
@@ -224,7 +224,7 @@
         </a>
     </footer>
 
-    <div class="modal-container" style="display: none;">
+    <div class="modal-container hidden">
         <div class="modal modal-search">
             <div class="close">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,6 +258,8 @@
             </form>
         </div>
     </div>
+
+    <script src="assets/js/index.js" type="module"></script>
 
 </body>
 
